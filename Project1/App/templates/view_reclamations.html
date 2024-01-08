@@ -1,0 +1,7 @@
+<!-- App/templates/view_reclamations.html -->
+{% for reclamation in reclamations %}
+    <p>{{ reclamation.encrypted_message }}</p>
+    <p>Submitted by: {{ reclamation.user.username }}</p>
+    <p>Date: {{ reclamation.date_created }}</p>
+    <hr>
+{% endfor %}
